@@ -5,12 +5,6 @@ echo -e "\033[36m$time\033[0m \033[43;30m Author \033[0m\033[46;31m LiuXin \033[
 cd /I/GitRepositories/GitRepository_github.com/FileStorage
 eval `ssh-agent -s`
 ssh-add ~/.ssh/github_FileStorage_rsa
-git acp
+git pull
 
-function pause(){
-        read -n 1 -p "$*" INP
-        if [ $INP != '' ] ; then
-                echo -ne '\b \n'
-        fi
-}
 read -n 1 -p "Press any key to exit."
